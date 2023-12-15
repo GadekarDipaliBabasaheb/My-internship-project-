@@ -1,0 +1,52 @@
+import random
+
+task=[]
+def add_task(task):
+    tasks.append({"task":task,"completed":False})
+    print("task added")
+    def list_tasks():
+        
+        print("\nTO-DO LIST")
+        
+        for index,task in enumerate(taskss,start=1 ):
+            if task["completed"]:
+                status="✓"
+            else:
+                    status=" " 
+                    print(f"{index}.[{task}]  {task['task']}")
+
+    print()
+def mark_completed(index):
+              if 1<=index <=len(task):
+                  task[index-1]["completed"]=true
+                  print("Task marked as completed")
+                  
+              else: 
+                      print("Invalid task Index")
+                      while True:
+                          print("\n Options")
+                          print("1.add task")
+                          print("2.List tasks")
+                          print("3.Mark as completed")
+                          print("4.Exit")
+                          
+                          choice=input("Enter your choice(1/2/3/4)")
+                          if choice =="1":
+                              task=input("Enter the task:")
+                              add_task(task)
+                              
+                          elif choice=="2": 
+                                  list_task()
+                          elif choice =="3":
+                                      list_task()
+                                      index=int(input("Enter the task number"))
+                                      mark_completed(index)
+                                      
+                          elif choice =='4':
+                                      print("GoodBye")
+                                      break
+                          else:
+                                      print("Invalid choice.please choose 1,2,3,4")
+                                  
+                              
+    
